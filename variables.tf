@@ -69,7 +69,7 @@ variable "server_region" {
 }
 
 variable "server_boot_image" {
-  description = "GCE instance image that is being used, currently Debian only support is available"
+  description = "GCE instance image that is being used, currently Ubuntu only support is available"
   default     = "ubuntu-os-cloud/ubuntu-1804-lts"
 }
 
@@ -710,7 +710,7 @@ variable "folder_id" {
 variable "composite_root_resources" {
   description = "A list of root resources that Forseti will monitor. This supersedes the root_resource_id when set."
   type        = "list"
-  default     = [""]
+  default     = []
 }
 
 variable "sendgrid_api_key" {
